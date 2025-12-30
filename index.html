@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ECC うちのまき教室</title>
+<style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f7f7f7;
+        color: #333;
+    }
+
+    /* ヘッダー */
+    header {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background: white;
+        border-bottom: 1px solid #ddd;
+    }
+    header img {
+        height: 60px;
+    }
+
+    /* 3カラム（写真・住所・地図） */
+    .intro-section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .intro-item {
+        width: 300px;
+        text-align: center;
+    }
+
+    /* 写真 */
+    .intro-item img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .photo-comment {
+        margin-top: 10px;
+        font-size: 15px;
+        color: #555;
+    }
+
+    /* 住所ボックス */
+    .contact-box {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    /* 地図 */
+    .map-box iframe {
+        width: 100%;
+        height: 250px;
+        border: 0;
+        border-radius: 8px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 26px;
+        color: #c0392b;
+    }
+
+    /* テーブル共通 */
+    table {
+        width: 95%;
+        max-width: 1050px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background: white;
+        table-layout: fixed;
+        font-size: 15px;
+    }
+    table th, table td {
+        border: 1px solid #ccc;
+        padding: 12px;
+        text-align: center;
+    }
+    table th {
+        background: #008000;
+        color: white;
+        font-weight: bold;
+    }
+    /* 注意書き*/
+    .fee-notes {
+        width: 85%;
+        max-width: 1050px;
+        margin: 20px auto;
+        font-size: 14px;
+        line-height: 1.8;
+        color: #444;
+    }
+
+    /* 講師コメント */
+    .teacher-comment {
+        width: 90%;
+        max-width: 800px;
+        margin: 30px auto 60px auto;
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+    .teacher-comment-title {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #c0392b;
+    }
+    .teacher-comment-text {
+        font-size: 17px;
+        line-height: 1.9;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="ECCロゴ">
+</header>
+
+<!-- 3カラム：写真・住所・地図 -->
+<div class="intro-section">
+
+    <!-- 写真 -->
+    <div class="intro-item">
+        <img src="ECC1.jpeg" alt="ECC外観写真">
+        <div class="photo-comment">内牧商店街にあります</div>
+    </div>
+
+    <!-- 住所 -->
+    <div class="intro-item">
+        <div class="contact-box">
+            <strong>ECC うちのまき教室</strong><br>
+            講師：小山 倫世<br><br>
+
+            〒869-2301<br>
+            熊本県阿蘇市内牧248 吉田屋<br><br>
+
+            TEL：090-8353-0274
+        </div>
+    </div>
+
+    <!-- 地図 -->
+    <div class="intro-item map-box">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.948067312033!2d131.0380809!3d32.9751059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354126b341f6e15f%3A0x47bd460216828cc2!2z44CSODY5LTIzMDEg54aK5pys55yM5YW15bqr5biC5YaF5p2-5Yy65L2Q5ZCI5bGL!5e0!3m2!1sja!2sjp!4v1735550000000!5m2!1sja!2sjp"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+
+</div>
+
+<h2>2026年度 タイムスケジュール</h2>
+
+<table class="schedule-table">
+<tr>
+<th>月</th><th>火</th><th>水</th><th>木</th><th>金</th>
+</tr>
+
+<tr>
+<td></td>
+<td>17:00～18:00<br>年中・年長</td>
+<td></td>
+<td>17:00～18:00<br>小3・4（継続）</td>
+<td>17:30～18:00<br>かんじ・漢検</td>
+</tr>
+
+<tr>
+<td>18:00～19:00<br>小4〜6</td>
+<td>18:00～19:00<br>小1〜3</td>
+<td>18:00～19:30<br>中3</td>
+<td>18:00～19:00<br>小5・6（継続）</td>
+<td>18:00～18:30<br>さんすう・計算</td>
+</tr>
+
+<tr>
+<td></td>
+<td>20:00～21:30<br>中2</td>
+<td></td>
+<td>20:00～21:30<br>中1</td>
+<td>18:30～19:10<br>スーパーラーニング</td>
+</tr>
+
+</table>
+
+<h2>学費案内</h2>
+
+<!-- 英語・英会話コース -->
+<table class="fee-table">
+    <tr><th colspan="6" style="font-size:22px;">英語・英会話コース</th></tr>
+    <tr>
+        <th>対象 / コース</th><th>入学金</th><th>検定料</th><th>授業料</th><th>教材費</th><th>合計</th>
+    </tr>
+    <tr><td>2・3歳児</td><td>5,500円</td><td>-</td><td>月謝：6,600円</td><td>21,900円</td><td>34,000円</td></tr>
+    <tr><td>4・5歳児</td><td>5,500円</td><td>2,200円</td><td>月謝：7,700円</td><td>21,900円</td><td>37,300円</td></tr>
+    <tr><td>小学1〜6年生<br>スタンダード</td><td>5,500円</td><td>2,200円</td><td>月謝：7,700円</td><td>19,910円</td><td>35,310円</td></tr>
+    <tr><td>小学1〜6年生<br>スーパーラーニング</td><td>-</td><td>-</td><td>月謝：12,100円</td><td>30,180円</td><td>49,980円</td></tr>
+    <tr><td>中学生（メイン）</td><td>5,500円</td><td>2,750円</td><td>月謝：9,900円</td><td>17,170円〜18,490円</td><td>35,320円〜36,640円</td></tr>
+    <tr><td>中学生（文法プラス）</td><td>-</td><td>-</td><td>月謝：14,300円</td><td>20,100円〜22,300円</td><td>42,650円〜44,850円</td></tr>
+</table>
+
+<!-- 注意書き（枠なし） -->
+<div class="fee-notes">
+● スーパーラーニングプランは、スタンダードプランに加え、「読み書きプラス」(低学年)または「中学準備読み書きプラス」(高学年)を受講するプランです。<br>
+※ 英語・英会話コース生（2・3歳児除く）は、入学時に「ＥＣＣ全国児童・中学生英語検定試験」検定料を入学金・授業料と共に納入いただきます。<br>
+※ 中学生は音声・動画教材をストリーミング再生できるインターネット環境が必要です。データ通信料はご利用者様のご負担となります。<br>
+※ 教材費には、スクールバッグ（1,990円）が含まれています。
+</div>
+
+<br><br>
+
+<!-- さんすう・計算コース -->
+<table class="fee-table">
+    <tr><th colspan="5" style="font-size:22px;">さんすう・計算コース</th></tr>
+    <tr>
+        <th>対象</th><th>入学金</th><th>授業料</th><th>教材費</th><th>合計</th>
+    </tr>
+    <tr>
+        <td>4歳児〜小学生</td>
+        <td>5,500円</td>
+        <td>月謝（週1回）：5,500円</td>
+        <td>5,660円〜6,190円</td>
+        <td>16,660円〜17,190円</td>
+    </tr>
+    <tr>
+        <td>4歳児〜小学生</td>
+        <td>5,500円</td>
+        <td>月謝（週2回）：7,700円</td>
+        <td>3,040円</td>
+        <td>16,240円</td>
+    </tr>
+</table>
+
+<div class="fee-notes">
+※ 教材費には、スクールバッグ（1,990円）が含まれています。
+</div>
+
+<br><br>
+
+<!-- かんじ・漢検コース -->
+<table class="fee-table">
+    <tr><th colspan="5" style="font-size:22px;">かんじ・漢検®コース</th></tr>
+    <tr>
+        <th>対象</th><th>入学金</th><th>授業料</th><th>教材費</th><th>合計</th>
+    </tr>
+    <tr>
+        <td>4歳児〜社会人</td>
+        <td>5,500円</td>
+        <td>月謝：5,500円</td>
+        <td>3,460円〜5,980円</td>
+        <td>14,460円〜16,980円</td>
+    </tr>
+</table>
+
+<div class="fee-notes">
+※ 教材費には、スクールバッグ（1,990円）が含まれています。
+</div>
+
+<br><br>
+
+<!-- 講師コメント -->
+<div class="teacher-comment">
+    <div class="teacher-comment-title">講師コメント</div>
+
+    <div class="teacher-comment-text">
+        ECCジュニア うちのまき教室の小山です。<br>
+        【楽しく学べる】をモットーにレッスンをしています。<br>
+        英会話の他に漢字・計算のコースも開講しています。<br>
+        無料体験いつでもお待ちしております。お気軽にお電話ください。
+    </div>
+</div>
+<p style="text-align:center; font-size:18px; margin-top:40px;">
+    ECCジュニアの公式HPは 
+    <a href="https://www.eccjr.co.jp/" target="_blank" style="color:#c0392b; font-weight:bold;">
+        こちら
+    </a>
+</p>
+
+
+</body>
+</html>
